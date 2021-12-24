@@ -71,3 +71,54 @@ header .line {
     width: 30px;
     height: 30px;
 }
+
+.banner {
+    background-image: url('../img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-left: 90px;
+    padding-bottom: 90px;
+}
+
+.banner h1 {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.banner-images{
+    margin-top: 50px;
+}
+
+.banner-images img {
+    width: 148px;
+    height: 148px;
+    border: 4px solid #117050;
+    border-radius: 50%;
+    border-width: 6px;
+    margin-right: 40px;
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1-content {
+
+}
+
+.area1-img1 {
+    background-color: red;
+    height: 100px;
+}
+
+.area1-img2 {
+    background-color: black;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
