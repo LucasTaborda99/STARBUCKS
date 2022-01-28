@@ -158,7 +158,6 @@ header .line {
 }
 
 .area1-img1 {
-    /*background-color: red;*/
     height: 350px;
     background-image: url('../img/f2.jpg');
     background-size: cover;
@@ -166,7 +165,6 @@ header .line {
 }
 
 .area1-img2 {
-    /*background-color: black;*/
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     background-image: url('../img/f1.jpg');
@@ -196,7 +194,6 @@ header .line {
 }
 
 .area2-img1 {
-    /*background-color: red;*/
     height: 450px;
     background-image: url('../img/f4.jpg');
     background-size: cover;
@@ -204,7 +201,6 @@ header .line {
 }
 
 .area2-img2 {
-    /*background-color: black;*/
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     background-image: url('../img/f3.jpg');
@@ -233,7 +229,7 @@ header .line {
 
 .area3-img1 {
     /*background-color: red;*/
-    height: 800px;
+    height: 1020px;
     background-image: url('../img/f5.jpg');
     background-size: cover;
     background-position: center;
@@ -268,3 +264,188 @@ header .line {
     background-position: left;
 }
 
+.area5 {
+    background-image: url('../img/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+footer {
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: #117050;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    line-height: 28px;
+}
+
+.footer-bottom span {
+    opacity: .4;
+    font-weight: 200;
+}
+
+@media (min-width: 769px) and (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner {
+        background-image: url('../img/bg.jpg');
+        background-position: center;
+        background-size: cover;
+        padding: 40px;
+    }
+
+    .header-search input {
+        font-size: 16px;
+        font-family: 'Open Sans';
+        max-width: 250px;
+        margin-left: 60px;
+        padding: 8px 80px 8px 15px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .banner-images img {
+        width: 70px;
+        height: 70px;
+        border: 3px solid #117050;
+        border-radius: 50%;
+        border-width: 2px;
+        margin-right: 1px;
+    }
+
+    .area1, .area2, .area3, .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .area1-content, .area2-content, .area3-content, .area4-content{
+        padding: 40px;
+    }
+   
+    .area5 {
+        height: 200px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    .footer-content p {
+        max-width: 500px;
+        margin: 1px auto;
+        line-height: 28px;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+        word-spacing: 2px;
+        line-height: 28px;
+        padding: 15px;
+    }
+
+    .footer-content h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 3rem;
+        margin-bottom: 5px;
+    }
+
+    .socials {
+        padding-right: 40px;
+    }
+}
