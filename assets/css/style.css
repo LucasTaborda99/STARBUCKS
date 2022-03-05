@@ -52,32 +52,6 @@ header .line {
   height: 10px;
 }
 
-.header-second-menu a {
-  text-decoration: none;
-}
-
-#list-second-menu {
-  list-style: none;
-  gap: 170px;
-  display: flex;
-  margin-left: 60px;
-}
-
-#list-second-menu a {
-  color: #fff;
-}
-
-#list-second-menu a:hover {
-  color: #117050;
-}
-
-.second-header-area {
-  background-color: #33433d;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header-area {
   display: flex;
   justify-content: space-between;
