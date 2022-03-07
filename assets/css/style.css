@@ -58,6 +58,7 @@ header .line {
   align-items: center;
   height: 100px;
   padding: 20px;
+  background-color: #ffffff;
 }
 
 .header-left img {
@@ -80,6 +81,79 @@ header .line {
 
 .header-menu a:hover {
   color: #117050;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+/* Até 600px de largura irá entrar essas funcionalidades */
+@media (max-width: 600px) {
+  #list-menu {
+    /* display: block; serve para deixar um em baixo do outro */
+    display: block;
+    /* Serve para deixar por cima de qualquer coisa */
+    position: absolute;
+    /* Quando usar o position, tem que falar quanto de largura irá usar da tela, nesse caso será 100% da tela */
+    width: 100%;
+    top: 130px;
+    left: 0px;
+    right: 0px;
+    background-color: #fff;
+    /* vh significa view port height, ou seja, 100% da altura da tela */
+    height: 51vh;
+    /* Garantir que ele vai ficar por cima de qualquer elemento */
+    z-index: 1000;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  /* Quando a clase no nav-menu estiver ativa, ele vai ativar o display flex e mostrar o list-menu */
+  #nav-menu.active #list-menu {
+    height: 51vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #list-menu a {
+    display: block;
+    padding: 1rem 0;
+    margin: 10px 0rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+  #hamburger {
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after, #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  #nav-menu.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav-menu.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav-menu.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
 
 .banner {
