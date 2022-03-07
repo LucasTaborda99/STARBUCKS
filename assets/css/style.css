@@ -89,6 +89,9 @@ header .line {
 
 /* Até 600px de largura irá entrar essas funcionalidades */
 @media (max-width: 600px) {
+  .header-left a img {
+    margin-left: 35px;
+  }
   #list-menu {
     /* display: block; serve para deixar um em baixo do outro */
     display: block;
